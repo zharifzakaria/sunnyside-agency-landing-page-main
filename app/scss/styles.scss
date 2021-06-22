@@ -1,14 +1,5 @@
 @import "globals";
 @import "variables";
 
-
-.headerbg {
-    position: absolute;
-    z-index: -99;
-    top:0;
-    
-    img {
-        object-fit: cover;
-        width: 100vw;
-    }
-}
+@import "header";
+@import "featured";

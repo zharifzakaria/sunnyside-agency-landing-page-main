@@ -1,0 +1,30 @@
+.featured {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: url("../../images/desktop/image-header.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: $medCyan;
+  z-index: -100;
+
+  > h1 {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $white;
+    font-size: 3.375em;
+    line-height: 63px;
+    letter-spacing: 0.2em;
+  }
+}

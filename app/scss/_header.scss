@@ -1,0 +1,46 @@
+.header {
+  padding: 0 2.375rem;
+
+  &__logo {
+    img {
+      width: 10.9375rem;
+    }
+  }
+
+  &__menu {
+      > span {
+        display: block;
+        width: 26px;
+        height: 3px;
+        background-color: $white;
+
+        &:not(:last-child){
+            margin-bottom: 5px;
+        }
+      }
+  }
+
+  &__list {
+      list-style-type: none;
+
+      > li {
+        padding: 1.375rem 1.625rem;
+        height: 100%;
+        color: $white;
+        opacity: 1;
+        transition: opacity 300ms ease-in-out;
+        background-color: transparent;
+        cursor: pointer;
+
+        &.active {
+            background-color: $white;
+            color: $darkBlue;
+            font-family: 'Fraunces', serif;
+            font-weight: 900;
+            text-transform: uppercase;
+            border-radius: 30px;
+        }
+      }
+
+  }
+}
