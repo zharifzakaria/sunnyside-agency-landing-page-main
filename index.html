@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@600;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/css/styles.min.css">
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,7 +17,26 @@
   </style>
 </head>
 <body>
-  About
+
+  <header>
+    <nav>
+      <a href="#" class="logo">
+        <img src="./images/logo.svg" alt="">
+      </a>
+
+      <a href="#" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </nav>
+  </header>
+
+  <div class="headerbg">
+    <img src="./images/desktop/image-header.jpg" alt="orange">
+  </div>
+
+  <!-- About
   Services
   Projects
   Contact
@@ -58,11 +79,13 @@
   About
   Services
   Projects
-  Contact
+  Contact -->
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="app/js/script.js"></script>
 </body>
 </html>
