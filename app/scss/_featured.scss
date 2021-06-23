@@ -12,6 +12,10 @@
   background-color: $medCyan;
   z-index: -100;
 
+  &__block {
+    height: 41em;
+  }
+
   > h1 {
     position: absolute;
     top: 18%;

@@ -7,6 +7,12 @@ html {
     box-sizing: inherit;
 }
 
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -23,5 +29,18 @@ body {
 
     &-ai-c{
         align-items: center;
+    }
+}
+
+// visibility
+.desktop-visible {
+    @include breakpoint-down(medium) {
+        display: none;
+    }
+}
+
+.mobile-visible {
+    @include breakpoint-up(large) {
+        display: none;
     }
 }

@@ -1,9 +1,10 @@
 .header {
-  padding: 0 2.375rem;
+  padding: 1.375em 2.375em;
+  height: 6.05em;
 
   &__logo {
     img {
-      width: 10.9375rem;
+      width: 10.9375em;
     }
   }
 
@@ -13,19 +14,36 @@
         width: 26px;
         height: 3px;
         background-color: $white;
+        opacity:1;
+        transform-origin: 2px;
+        transition: all 300ms ease-in-out;
 
         &:not(:last-child){
             margin-bottom: 5px;
         }
       }
+
+    &.open {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+
+    }
   }
 
   &__list {
       list-style-type: none;
 
       > li {
-        padding: 1.375rem 1.625rem;
-        height: 100%;
+        padding: 1.375em 1.625em; //test
         color: $white;
         opacity: 1;
         transition: opacity 300ms ease-in-out;
