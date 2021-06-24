@@ -1,6 +1,48 @@
 .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background: #90D4C5;
     width: 100%;
-    min-height: 200px;
-    color: $darkCyan;
+    color: hsl(165, 36%, 34%);
+
+    img {
+        filter: invert(60%) sepia(6%) saturate(3420%) hue-rotate(116deg) brightness(100%) contrast(89%);
+    }
+
+    &__menu {
+        display: flex;
+        list-style-type: none;
+        text-align: center;
+        padding-inline-start: 0;
+        padding: 1.08em 0;
+
+        li {
+            &:not(:last-child) {
+                padding-right: 1.25em;
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        list-style-type: none;
+        text-align: center;
+        padding-inline-start: 0;
+        padding: 3.125em 0;
+
+        li {
+            &:not(:last-child) {
+                padding-right: 1.25em;
+            }
+        }
+    }
+
+}
+
+.attribution {
+    background: #90D4C5;
+    width: 100%;
+    color: hsl(165, 36%, 34%);
+    margin-top: -24px;
 }

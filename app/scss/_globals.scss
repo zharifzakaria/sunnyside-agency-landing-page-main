@@ -1,5 +1,5 @@
 html {
-    font-size: 100%;
+    font-size: 16px;
     box-sizing: border-box;
 }
 
@@ -33,6 +33,17 @@ body {
         align-items: center;
     }
 }
+
+.container {
+    padding: 4.125em 2.33em;
+}
+
+.order-1 {order: 1;}
+.order-2 {order: 2;}
+.order-3 {order: 3;}
+.order-4 {order: 4;}
+.order-5 {order: 5;}
+.order-6 {order: 6;}
 
 // visibility
 .desktop-visible {
